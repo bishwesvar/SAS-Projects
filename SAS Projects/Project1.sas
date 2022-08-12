@@ -1,9 +1,7 @@
 /* SASHELP.Heart data analysis Our analysis will be on data avaoilable in Sashelp Library*/
-
 /*Step1 : Just see data Visually*/
  
 PROC PRINT DATA=sashelp.heart(OBS=10);
-
 RUN;
 
 /*Step 2: As a SAS programmer you have to import/export data 
@@ -12,7 +10,6 @@ so let first export as EXCEL file then import same file */
 PROC EXPORT DATA=Sashelp.heart OUTFILES="C:\Users\biprsi\Desktop\SAS Test\Heart"
 	DBMS=XLSX;
 RUN;
-
 
 /*Now we can import data in a file name Proj1 from EXCEL file.*/
 PROC IMPORT DATAFILE = "C:\Users\biprsi\Desktop\SAS Test\Heart.XLSX"
